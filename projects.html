@@ -1,0 +1,332 @@
+<!-- projects.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #1e1e1e; /* Dark background color */
+            color: #ffffff; /* Light text color */
+        }
+
+        h1 {
+            color: #61dafb; /* Header text color */
+        }
+
+        .project {
+            position: relative;
+            margin-bottom: 30px;
+            padding: 20px; /* Add padding for better visual separation */
+            background-color: #2b2b2b; /* Dark background color for each project box */
+            border-radius: 10px; /* Add rounded corners for a modern look */
+            overflow: hidden; /* Ensure the overflow is hidden to prevent the glowing effect from bleeding outside */
+        }
+
+        .project::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: linear-gradient(rgba(97, 218, 251, 0.2), rgba(97, 218, 251, 0)); /* Blue tint gradient */
+            pointer-events: none; /* Ensure the overlay doesn't interfere with content */
+            border-radius: inherit; /* Inherit border-radius from the parent */
+            animation: glowingBorder 2s infinite alternate; /* Glowing border animation */
+        }
+
+        @keyframes glowingBorder {
+            from {
+                border: 2px solid #4d4d4d; /* Initial border color */
+            }
+            to {
+                border: 2px solid #61dafb; /* Glowing border color */
+            }
+        }
+
+        .project h2 {
+            margin-bottom: 10px;
+            color: #61dafb; /* Project title color */
+        }
+
+        .project p {
+            margin-bottom: 15px;
+        }
+
+        .project .skills {
+            font-weight: bold;
+            color: #61dafb; /* Skills text color */
+        }
+
+        /* Style for unordered list in CityRanker Project */
+        .project ul {
+            list-style-type: square;
+            margin-left: 20px;
+        }
+
+        /* Style for list items in CityRanker Project */
+        .project li {
+            color: #61dafb; /* List item text color */
+        }
+
+        /* Apply styles for links */
+        a {
+            color: #61dafb; /* Link color */
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Media query for dark mode */
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #1e1e1e;
+                color: #ffffff;
+            }
+
+            .project {
+                background-color: #2b2b2b;
+            }
+
+            .project h2 {
+                color: #61dafb;
+            }
+
+            .project .skills,
+            .project li,
+            a {
+                color: #61dafb;
+            }
+        }
+
+
+
+        .project.active::before {
+            animation: none; /* Remove animation for the focused box */
+            border: 2px solid #61dafb; /* Border color for the focused box */
+        }
+
+        .footer {
+            text-align: center;
+        }
+
+        .social-text {
+            display: inline-block;
+            margin: 0 10px;
+            text-decoration: none;
+            color: #ffffff; /* Adjust the color as needed */
+            font-family: "Times New Roman", serif
+        }
+
+        .social-text:hover {
+            text-decoration: underline;
+        }
+
+        /* Navigation Bar Styles */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            padding: 15px;
+            border-radius: 0px;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            transition: color 0.3s ease-in-out;
+        }
+
+        nav a:hover {
+            color: #007BFF;
+        }
+
+        @media (max-width: 767px) {
+            nav {
+                flex-direction: column; /* Stack links vertically */
+                align-items: center; /* Center items horizontally */
+                font-size: medium;
+                overflow-x: auto;
+                white-space: nowrap;
+            }
+
+            nav div {
+                flex-direction: column; /* Stack links vertically */
+                text-align: center; /* Center text within each link */
+                display: inline-block;
+            }
+
+            nav a {
+                color: #fff;
+                text-decoration: none;
+                margin: 0 15px;
+                transition: color 0.3s ease-in-out;
+            }
+        }
+
+        nav a:visited {
+            color: inherit; /* Use the default color */
+        }
+
+        .title {
+            margin-top: 65px;
+        }
+
+        @media (max-width: 800px) {
+            .title {
+                text-align: center; /* Center text within the element */
+            }
+        }
+
+
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div>
+            <a href="index.html">Home</a>
+            <a href="summary.html">Summary</a>
+            <a href="achievements.html">Achievements</a>
+            <a href="about.html">About</a>
+            <a href="articles.html">Articles</a>
+        </div>
+    </nav>
+
+    <br/>
+    <br/>
+
+    <h1 class="title">Projects</h1>
+    <br/>
+
+    <div class="project">
+        <h2>WeRec - Weather Recorder</h2>
+        <p>Sep 2023 - Nov 2023</p>
+        <p>Associated with Manipal University Jaipur</p>
+        <p>
+            🚀 Project Showcase: WeRec - Weather Recorder
+            <br/>
+            <strong>Objective:</strong> The primary goal of WeRec, short for Weather Recorder, was to develop a sophisticated application that provides precise weather forecasts for specific geographic areas. The project aimed to create a user-friendly interface for accessing real-time weather data efficiently.
+            <br/>
+            <strong>Technologies Used:</strong>
+            <span class="skills">Java</span>, <span class="skills">JSON</span>, <span class="skills">API</span>, <span class="skills">Object-Oriented Programming (OOP)</span>, <span class="skills">SQLite</span>
+            <br/>
+            <strong>Timeline:</strong> WeRec was successfully completed within a span of 2 months, showcasing not only technical efficiency but also a commitment to timely project delivery.
+        </p>
+        <p>
+            WeRec stands as a testament to my skills in Java, API integration, and database management. The project involved meticulous implementation of Object-Oriented Principles, ensuring a modular and scalable codebase. Furthermore, JSON was utilized for efficient data interchange, and SQLite was employed for streamlined data storage, contributing to a robust and feature-rich application. The successful completion of WeRec demonstrated my dedication to algorithmic thinking and creative problem-solving in a real-world context.
+        </p>
+        <p>
+            WeRec not only showcased my technical abilities but also highlighted my proficiency in web scraping and file handling. The application's intuitive design and seamless integration of various technologies underscored my commitment to delivering user-friendly solutions in the realm of weather forecasting.
+        </p>
+        <p class="skills">Skills: Algorithms · JSON · API · SQLite · Object-Oriented Programming (OOP) · Java · Web Scraping · File Handling</p>
+    </div>
+
+    <div class="project">
+        <h2>Voicify - The Voice Recognition Integrated Music Player and Chat Bot</h2>
+        <p>Mar 2023 - Mar 2023</p>
+        <p>Associated with Manipal University Jaipur</p>
+        <p>
+            Voicify was a project born out of the intersection of voice recognition, music player functionality, and responsive chatbot design. It was undertaken as part of #SIGFEST's #SIGAI AI Bot Development, where participants were challenged to choose a topic from a diverse set of intriguing options and build a working sample within a tight timeframe of thirty-six hours.
+        </p>
+        <p>
+            The project, implemented entirely in Python, showcased my adaptability and proficiency in a dynamic environment. The UI, developed using Python’s Tkinter library, added a layer of user-friendly interaction to the application. Voicify, beyond being a mere music player, incorporated advanced features such as voice recognition and a responsive chatbot, highlighting my capacity for innovative and multifunctional project development.
+        </p>
+        <p>
+            The collaborative nature of the project emphasized teamwork, effective communication, and project management skills. Voicify served as a platform to not only showcase technical prowess but also demonstrate the ability to integrate diverse technologies seamlessly.
+        </p>
+        <p class="skills">Skills: Algorithms · API · Teamwork · Presentations · Analytical Skills · Communication · Tkinter · Team Management · Project Management</p>
+    </div>
+
+    <div class="project">
+        <h2>DataSync - A GUI Based Banking Application</h2>
+        <p>Oct 2021 - Jan 2022</p>
+        <p>Associated with Delhi Public School Bangalore North</p>
+        <p>
+            DataSync was a monumental project, conceived with the intention of building a near-perfect model of a banking application. The project spanned almost three months and comprised a substantial twenty-six thousand lines of code. Undertaken during my 12th-grade internals, it provided a platform to leverage the concepts learned in Computer Science classes.
+        </p>
+        <p>
+            The project was a comprehensive exploration of backend and frontend development, encompassing Python and MySQL for functionality and Tkinter for the user interface. The features incorporated into DataSync, including an in-app calendar, chatbot, and currency converter, reflected a commitment to creating a feature-rich and user-friendly application.
+        </p>
+        <p>
+            The extensive use of Database Management principles in DataSync enhanced the project's readability and user experience. The project served as an entry point into the realms of RDBMS, data analysis, and data management, offering exposure to a myriad of tools and techniques.
+        </p>
+        <p>
+            DataSync not only tested technical capabilities but also honed leadership, team management, and overall skill development. The experience provided insights into the intricacies of both backend and frontend development, contributing to a more holistic understanding of software engineering.
+        </p>
+        <p class="skills">Skills: Algorithms · Teamwork · Analytical Skills · Communication · Tkinter · MySQL · Database Design · Team Management · Project Management</p>
+    </div>
+
+    <div class="project">
+        <h2>CityRanker Project</h2>
+        <p>🚀 Exciting Announcement: Introducing CityRanker Project! 🌆</p>
+        <p>Thrilled to unveil CityRanker, an innovative platform engaging users in choosing between two cities. Inspired by "The Social Network," CityRanker transforms competition and comparison into a user-friendly experience, allowing individuals to express preferences and explore cities uniquely.</p>
+        <p>
+            <strong>How does it work? 🤖🌐</strong>
+        </p>
+        <ul>
+            <li><strong>Picture Selection:</strong> Users are presented with random pictures of two cities. Their task is to choose between the two.</li>
+            <li><strong>Vote Storage:</strong> User choices are stored in a database, where votes are meticulously recorded for further analysis.</li>
+            <li><strong>Vote Dynamics:</strong> The interactions and dynamics of the pictures, along with the accumulated votes, play a crucial role in shaping the predictions made by the underlying model.</li>
+            <li><strong>Model Prediction:</strong> The model processes the collected votes and image dynamics to make predictions about city preferences based on user choices.</li>
+        </ul>
+        <p>
+            CityRanker operates through a simple yet engaging process, incorporating machine learning to add intelligence to city comparisons. Developed in Python, CityRanker boasts an intuitive GUI using Tkinter, ensuring seamless navigation for users. The project took 4-5 months for development, starting in August 2023.
+        </p>
+        <p>
+            <strong>Machine Learning Integration 🌲:</strong>
+        </p>
+        <p>
+            CityRanker differentiates itself by integrating machine learning, adding intelligence to city comparisons. Leveraging the RandomForestClassifier, the machine learning component uses decision trees during training, contributing to accuracy and reliability in city comparisons. The RandomForestClassifier consistently achieves an accuracy rate exceeding 85%, grounding user choices in a robust machine-learning model and adding credibility to the entire interaction.
+        </p>
+        <p>
+            <strong>Personal Growth and Culmination 🌍:</strong>
+        </p>
+        <p>
+            CityRanker holds immense personal significance, representing the embodiment of fundamental principles and skills acquired over the years. It is a testament to my growth as a developer, encompassing capabilities from programming and GUI design to machine learning implementation.
+        </p>
+        <p>
+            As I share CityRanker, I am excited about the doors it opens for future projects and collaborations. It has been a transformative experience, and I am eager to continue exploring innovative solutions and contributing to the dynamic landscape of technology. 🌟🚀
+        </p>
+        <p class="skills">Skills: Python · Tkinter · Machine Learning · Project Showcase · Tech Innovation</p>
+    </div>
+
+    <br/>
+    <br/>
+
+    <div class="footer">
+        <h3>Abhijeet Rajhans</h3>
+        <div class="social-icons">
+            <a href="mailto:ar.abhijeetrajhans@gmail.com" target="_blank" class="social-text">Email Me</a>
+            <a href="mailto:abhijeetrajhans.ar@yahoo.com" target="_blank" class="social-text">Yahoo Mail</a>
+            <a href="https://www.linkedin.com/in/abhijeetrajhans/" target="_blank" class="social-text">LinkedIn</a>
+            <a href="https://www.instagram.com/abhijeetrajhans/" target="_blank" class="social-text">Instagram</a>
+        </div>
+    </div>
+
+<script>
+    setTimeout(function() {
+        var projects = document.querySelectorAll('.project');
+        projects[0].classList.remove('active');
+        projects[1].classList.add('active');
+    }, 10000);
+</script>
+
+</body>
+
+</html>

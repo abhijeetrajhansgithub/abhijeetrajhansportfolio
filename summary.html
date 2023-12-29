@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Under Maintenance</title>
+    <style>
+        body {
+            background-color: #111;
+            color: #fff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .rounded-box {
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #333;
+            text-align: center;
+            box-shadow: 0 0 20px rgba(255, 105, 180, 0.7);
+            animation: glow 1s infinite alternate;
+        }
+
+        @keyframes glow {
+            0% {
+                box-shadow: 0 0 20px rgba(255, 105, 180, 0.7);
+            }
+            100% {
+                box-shadow: 0 0 30px rgba(255, 105, 180, 0.9);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="rounded-box">
+        <p>Webpage currently under maintenance</p>
+        <p>I regret any inconvenience caused</p>
+    </div>
+</body>
+</html>
