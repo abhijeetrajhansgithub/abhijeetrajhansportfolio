@@ -5,292 +5,150 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abhijeet Rajhans - Portfolio</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            line-height: 1.6;
-            margin: 20px;
-            background-color: #121212; /* Dark background color */
-            color: #fff;
-        }
-
-        .footer {
-            text-align: center;
-        }
-
-        .social-text {
-            display: inline-block;
-            margin: 0 10px;
-            text-decoration: none;
-            color: #ffffff; /* Adjust the color as needed */
-            font-family: "Times New Roman", serif
-        }
-
-        .social-text:hover {
-            text-decoration: underline;
-        }
-
-        #status {
-            font-weight: bold;
-            font-size: 48px; /* Adjust the font size as needed */
-            color: #666666; /* Adjust the color as needed */
-            margin-top: 10px; /* Adjust the margin as needed */
-        }
-
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        .intro-box {
-            background-color: #212121; /* Darker background color for the boxes */
-            padding: 20px;
-            border-radius: 10px; /* Rounded corners */
-            margin-bottom: 20px;
-            box-shadow: 0 0 10px rgba(255, 255, 255, 0.3); /* Glowing effect */
-        }
-
-        /* Navigation Bar Styles */
-        nav {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: #333;
-            padding: 15px;
-            border-radius: 0px;
-            z-index: 1000;
-        }
-
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 15px;
-            transition: color 0.3s ease-in-out;
-        }
-
-        nav a:hover {
-            color: #007BFF;
-        }
-
-        /* Default styles for desktop */
-        .pic {
-            display: block; /* Ensures the image is a block element */
-            margin-left: auto; /* Aligns the image to the right on desktop */
-            margin-right: 20px;
-            position: absolute;
-            right: 0;
-            border-radius: 10px; /* Adjust the value to control the roundness */
-            overflow: hidden;
-            top: 69px;
-            max-width: 350px; /* Adjust the maximum width as needed */
-            height: auto;
-        }
-
-        /* Media query for tablets (landscape and portrait) and larger phones */
-        @media (max-width: 800px) {
-            .pic {
-                display: block; /* Reset display property */
-                margin: 0 auto; /* Center the image horizontally */
-                position: revert;
-                margin-top: 100px;
-                max-width: 250px; /* Adjust the maximum width as needed */
-                height: auto;
-            }
-        }
-
-        .block-1 {
-            display: inline-block;
-            flex: 1;
-            position: relative;
-        }
-
-        .abhijeetrajhans {
-            position: fixed;
-            top: 6px;
-            right: 7px;
-            padding: 10px;
-            color: #ffffff; /* Set the text color as needed */
-            font-size: 18px;
-            z-index: 1000; /* Adjust the z-index as needed to ensure it appears on top */
-            font-family: "Franklin Gothic Medium", serif;
-        }
-
-        /* Media query for desktop mode */
-        @media (max-width: 767px) {
-            .abhijeetrajhans {
-                display: none; /* Hide in mobile view */
-            }
-        }
-
-        .abhijeetrajhans.hidden {
-            opacity: 0; /* Fade out when scrolled down */
-            pointer-events: none; /* Disable interaction when hidden */
-        }
-
-        @media (max-width: 767px) {
-            nav {
-                flex-direction: column; /* Stack links vertically */
-                align-items: center; /* Center items horizontally */
-                font-size: medium;
-                overflow-x: auto;
-                white-space: nowrap;
-            }
-
-            nav div {
-                flex-direction: column; /* Stack links vertically */
-                text-align: center; /* Center text within each link */
-                display: inline-block;
-            }
-
-            nav a {
-                color: #fff;
-                text-decoration: none;
-                margin: 0 15px;
-                transition: color 0.3s ease-in-out;
-            }
-        }
-
-        nav a:visited {
-            color: inherit; /* Use the default color */
-        }
-
-    </style>
+    <link rel="stylesheet" href="static/css/index.css">
 </head>
 
 <body>
-    <nav>
-        <div>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="projects.html">Projects</a>
-            <a href="summary.html">Summary</a>
-            <a href="articles.html">Articles</a>
-            <a href="achievements.html">Achievements&nbsp;&nbsp;</a>
-        </div>
-    </nav>
-
-    <img class="pic" src="https://media.licdn.com/dms/image/D4D03AQFE35hbQAtMrA/profile-displayphoto-shrink_400_400/0/1686855532687?e=1709164800&v=beta&t=bhcup1V_typ6hHHcSo_H7VegZmJgAk--IPF6tizs7Dk">
-
-    <div class="abhijeetrajhans">a b h i j e e t r a j h a n s&nbsp;&nbsp;&nbsp;</div>
-
-    <div>
-        <div class="block-1">
-            <br/>
-            <br/>
-            <h1>Hello, I'm Abhijeet Rajhans</h1>
-
-            <br/>
-            <p id="status">I am a CSE Undergrad</p>
-        </div>
-
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-
-        <div class="intro-box">
-            <h3>Introduction?? Yeps, not just a &lt;hello world&gt;</h3>
-        <p>
-            I'm a Computer Science Engineering student at Manipal University Jaipur, majoring in Computer Science. With
-            experience as a former intern at Teachnook, I bring a passion for technology and a dedication to mastering
-            programming languages.
-        </p>
-        <p>
-            As a computer science sophomore, I'm on an electrifying journey through the captivating world of programming
-            and technology! 🚀 With an unwavering commitment to excellence, I'm all in, dedicated to acing my studies
-            and chasing my future career dreams.
-        </p>
-        <p>
-            💡 My adventures in computer science and engineering have given me a rock-solid foundation in the realms of
-            programming languages, data structures, and algorithms. 📚 This academic odyssey only stokes the flames of my
-            enthusiasm to expand my skillset, turning me into a well-rounded, coding ninja! 💻🥋
-        </p>
-        <p>
-            🎓 During my three-month internship at Teachnook, I had the privilege of diving into the real world, where I
-            worked on exciting projects and honed practical skills. 🤝 Additionally, I'm an active member of the Google
-            Developer Student Clubs (GDSC) at MU-Jaipur, where I collaborate with an army of passionate, like-minded
-            folks. 🚀
-        </p>
-        <p>
-            🎓 Currently navigating the landscape of Computer Science and Engineering at Manipal University Jaipur, I'm
-            not just a student – I'm an aspiring AI/ML/DL developer! I truly believe that artificial intelligence and
-            machine learning have the power to revolutionize problem-solving as we know it, and I'm pumped to be part
-            of this transformative journey. 🤖🧠
-        </p>
-        <p>
-            🌟 To keep the adrenaline flowing, I've notched a 3-star rating in Hackerrank Problem Solving and a stellar
-            4-star rating in HackerRank C Programming. These badges of honor reflect my unwavering dedication to
-            leveling up my programming prowess and my commitment to never stop improving. 🌟
-        </p>
-        <p>
-            🌍 In the grand tapestry of the future, I dream of weaving my skills and knowledge to tackle real-world
-            challenges and leave a positive impact in the ever-evolving realm of computer science. I'm super stoked to
-            connect with fellow tech wizards, collaborate on thrilling projects, and help shape the exciting future of
-            technology. Let's code the world together! 🌐
-        </p>
-        <p>
-            Hence in a nutshell, as a computer science sophomore, I am eager to learn and grow as a programmer. I am
-            highly motivated and committed to achieving excellence in my studies and future career. My computer science
-            and engineering coursework has already introduced me to a wide range of topics including programming
-            languages, data structures, and algorithms. I am excited to continue learning and expanding my skillset to
-            become a well-rounded and proficient software developer. In the future, I plan to use my skills and
-            knowledge to solve real-world problems and make a positive impact in the field of computer science.
-        </p>
-        <p>
-            📧: abhijeetrajhans.ar@yahoo.com <br/>
-            📧: ar.abhijeetrajhans@gmail.com
-        </p>
-        </div>
-    </div>
-
-    <br/>
-    <br/>
-
-    <div class="footer">
-    <h3>Abhijeet Rajhans</h3>
-    <div class="social-icons">
-        <a href="mailto:ar.abhijeetrajhans@gmail.com" target="_blank" class="social-text">Email Me</a>
-        <a href="mailto:abhijeetrajhans.ar@yahoo.com" target="_blank" class="social-text">Yahoo Mail</a>
-        <a href="https://www.linkedin.com/in/abhijeetrajhans/" target="_blank" class="social-text">LinkedIn</a>
-        <a href="https://www.instagram.com/abhijeetrajhans/" target="_blank" class="social-text">Instagram</a>
-    </div>
+<div class="navigation">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="summary.html">Summary</a>
+    <a href="articles.html">Articles</a>
+    <a href="achievements.html">Achievements</a>
 </div>
 
-    <script>
-        // JavaScript code to change the text every few seconds
-        const changingText = document.getElementById('changingText');
-        const status = document.getElementById('status');
 
-        const textArray = ["I am a CSE Undergrad", "I am a Sophomore", "I am a Programmer", "I am a Keen Learner!"];
-        let currentIndex = 0;
+<img class="pic" src="https://media.licdn.com/dms/image/D4D03AQFE35hbQAtMrA/profile-displayphoto-shrink_400_400/0/1686855532687?e=1709164800&v=beta&t=bhcup1V_typ6hHHcSo_H7VegZmJgAk--IPF6tizs7Dk">
 
-        function updateText() {
-            status.innerHTML = textArray[currentIndex];
-            currentIndex = (currentIndex + 1) % textArray.length;
-        }
+<div class="abhijeetrajhans">a b h i j e e t r a j h a n s&nbsp;&nbsp;&nbsp;</div>
 
-        // Update text every 2 seconds (adjust the time interval as needed)
-        setInterval(updateText, 2000);
+<div>
+    <div class="block-1">
+        <br/>
+        <br/>
+        <h1>Hello, I'm Abhijeet Rajhans</h1>
 
-        // Hide element after scrolling a certain distance
-        document.addEventListener('DOMContentLoaded', function () {
-            var hideElement = document.querySelector('.abhijeetrajhans');
-            var scrollDistance = 10; // Adjust the scroll distance as needed
+        <br/>
+        <p id="status">I am a CSE Undergrad</p>
+    </div>
 
-            window.addEventListener('scroll', function () {
-                if (window.scrollY > scrollDistance) {
-                    hideElement.classList.add('hidden');
-                } else {
-                    hideElement.classList.remove('hidden');
-                }
-            });
-        });
-    </script>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+
+    <div class="scrollable-container">
+        <div class="scrollable-wrapper">
+            <div class="certificates">
+                <img class="image" src="images/Certificate1.png" alt="Certificate">
+            </div>
+
+            <div class="certificates">
+                <img class="image" src="images/Certificate2.png" alt="Certificate">
+            </div>
+
+            <div class="certificates">
+                <img class="image" src="images/Certificate3.png">
+            </div>
+            <div class="certificates">
+                <img class="image" src="images/Certificate4.png">
+            </div>
+            <div class="certificates">
+                <img class="image" src="images/Certificate5.png">
+            </div>
+            <div class="certificates">
+                <img class="image" src="images/Certificate6.png">
+            </div>
+            <div class="certificates">
+                <img class="image" src="images/Certificate7.png">
+            </div>
+            <div class="certificates">
+                <img class="image" src="images/Certificate8.png">
+            </div>
+            <div class="certificates">
+                <img class="image" src="images/Certificate9.png">
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <br/>
+
+    <div class="intro-box-and-footer">
+        <div class="intro-box">
+            <h3>Introduction?? Yeps, not just a &lt;hello world&gt;</h3>
+            <p>
+                I'm a Computer Science Engineering student at Manipal University Jaipur, majoring in Computer Science. With
+                experience as a former intern at Teachnook, I bring a passion for technology and a dedication to mastering
+                programming languages.
+            </p>
+            <p>
+                As a computer science sophomore, I'm on an electrifying journey through the captivating world of programming
+                and technology! 🚀 With an unwavering commitment to excellence, I'm all in, dedicated to acing my studies
+                and chasing my future career dreams.
+            </p>
+            <p>
+                💡 My adventures in computer science and engineering have given me a rock-solid foundation in the realms of
+                programming languages, data structures, and algorithms. 📚 This academic odyssey only stokes the flames of my
+                enthusiasm to expand my skillset, turning me into a well-rounded, coding ninja! 💻🥋
+            </p>
+            <p>
+                🎓 During my three-month internship at Teachnook, I had the privilege of diving into the real world, where I
+                worked on exciting projects and honed practical skills. 🤝 Additionally, I'm an active member of the Google
+                Developer Student Clubs (GDSC) at MU-Jaipur, where I collaborate with an army of passionate, like-minded
+                folks. 🚀
+            </p>
+            <p>
+                🎓 Currently navigating the landscape of Computer Science and Engineering at Manipal University Jaipur, I'm
+                not just a student – I'm an aspiring AI/ML/DL developer! I truly believe that artificial intelligence and
+                machine learning have the power to revolutionize problem-solving as we know it, and I'm pumped to be part
+                of this transformative journey. 🤖🧠
+            </p>
+            <p>
+                🌟 To keep the adrenaline flowing, I've notched a 3-star rating in Hackerrank Problem Solving and a stellar
+                4-star rating in HackerRank C Programming. These badges of honor reflect my unwavering dedication to
+                leveling up my programming prowess and my commitment to never stop improving. 🌟
+            </p>
+            <p>
+                🌍 In the grand tapestry of the future, I dream of weaving my skills and knowledge to tackle real-world
+                challenges and leave a positive impact in the ever-evolving realm of computer science. I'm super stoked to
+                connect with fellow tech wizards, collaborate on thrilling projects, and help shape the exciting future of
+                technology. Let's code the world together! 🌐
+            </p>
+            <p>
+                Hence in a nutshell, as a computer science sophomore, I am eager to learn and grow as a programmer. I am
+                highly motivated and committed to achieving excellence in my studies and future career. My computer science
+                and engineering coursework has already introduced me to a wide range of topics including programming
+                languages, data structures, and algorithms. I am excited to continue learning and expanding my skillset to
+                become a well-rounded and proficient software developer. In the future, I plan to use my skills and
+                knowledge to solve real-world problems and make a positive impact in the field of computer science.
+            </p>
+            <p>
+                📧: abhijeetrajhans.ar@yahoo.com <br/>
+                📧: ar.abhijeetrajhans@gmail.com
+                </p>
+            </div>
+        </div>
+
+        <br/>
+        <br/>
+
+        <div class="footer">
+            <h3>Abhijeet Rajhans</h3>
+            <div class="social-icons">
+                <a href="mailto:ar.abhijeetrajhans@gmail.com" target="_blank" class="social-text">Email Me</a>
+                <a href="mailto:abhijeetrajhans.ar@yahoo.com" target="_blank" class="social-text">Yahoo Mail</a>
+                <a href="https://www.linkedin.com/in/abhijeetrajhans/" target="_blank" class="social-text">LinkedIn</a>
+                <a href="https://www.instagram.com/abhijeetrajhans/" target="_blank" class="social-text">Instagram</a>
+            </div>
+        </div>
+    </div>
+
+
+
+<script src="static/js/index.js"></script>
 
 
 
