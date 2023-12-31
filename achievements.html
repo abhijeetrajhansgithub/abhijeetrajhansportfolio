@@ -5,218 +5,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Achievements Page</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            line-height: 1.6;
-            margin: 20px;
-            background-color: #000;
-            color: #fff;
-        }
-
-        h1,
-        h2,
-        p,
-        a {
-            color: #fff;
-        }
-
-        .award-box {
-            background-color: #333;
-            border-radius: 10px;
-            padding: 15px;
-            margin-bottom: 20px;
-            transition: box-shadow 0.3s ease-in-out;
-        }
-
-        .award-box:hover {
-            box-shadow: 0 0 10px rgba(0, 123, 255, 0.8);
-        }
-
-        a {
-            text-decoration: none;
-            transition: color 0.3s ease-in-out;
-        }
-
-        a:hover {
-            color: #007BFF;
-        }
-
-        /* Navigation Bar Styles */
-        nav {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: #333;
-            padding: 15px;
-            border-radius: 0px;
-            z-index: 1000;
-        }
-
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 15px;
-            transition: color 0.3s ease-in-out;
-        }
-
-        nav a:hover {
-            color: #007BFF;
-        }
-
-        @media (max-width: 767px) {
-            nav {
-                flex-direction: column; /* Stack links vertically */
-                align-items: center; /* Center items horizontally */
-                font-size: medium;
-                overflow-x: auto;
-                white-space: nowrap;
-            }
-
-            nav div {
-                flex-direction: column; /* Stack links vertically */
-                text-align: center; /* Center text within each link */
-                display: inline-block;
-            }
-
-            nav a {
-                color: #fff;
-                text-decoration: none;
-                margin: 0 15px;
-                transition: color 0.3s ease-in-out;
-            }
-        }
-
-        nav a:visited {
-            color: inherit; /* Use the default color */
-        }
-
-        .title {
-            margin-top: 65px;
-        }
-
-        @media (max-width: 800px) {
-            .title {
-                text-align: center; /* Center text within the element */
-            }
-        }
-
-        @media (max-width: 1080px) {
-            .title {
-                text-align: center; /* Center text within the element */
-                margin-top: 100px;
-                /* Add additional styles as needed for this screen size */
-            }
-        }
-
-        .abhijeetrajhans {
-            position: fixed;
-            top: 6px;
-            right: 7px;
-            padding: 10px;
-            color: #ffffff; /* Set the text color as needed */
-            font-size: 18px;
-            z-index: 1000; /* Adjust the z-index as needed to ensure it appears on top */
-            font-family: "Franklin Gothic Medium", serif;
-        }
-
-        /* Media query for desktop mode */
-        @media (max-width: 767px) {
-            .abhijeetrajhans {
-                display: none; /* Hide in mobile view */
-            }
-        }
-
-        .abhijeetrajhans.hidden {
-            opacity: 0; /* Fade out when scrolled down */
-            pointer-events: none; /* Disable interaction when hidden */
-        }
-
-        .footer {
-            text-align: center;
-        }
-
-        .social-text {
-            display: inline-block;
-            margin: 0 10px;
-            text-decoration: none;
-            color: #ffffff; /* Adjust the color as needed */
-            font-family: "Times New Roman", serif
-        }
-
-        .social-text:hover {
-            text-decoration: underline;
-        }
-
-    </style>
+    <link rel="stylesheet" href="static/css/achievements.css">
 </head>
 
 <body>
 <!-- Navigation Bar -->
-    <nav>
-        <div>
-            <a href="index.html">&nbsp;&nbsp;Home</a>
-            <a href="summary.html">Summary</a>
-            <a href="about.html">About</a>
-            <a href="projects.html">Projects</a>
-            <a href="articles.html">Articles&nbsp;&nbsp;</a>
-        </div>
-
-    </nav>
-
-    <div class="abhijeetrajhans">a b h i j e e t r a j h a n s&nbsp;&nbsp;&nbsp;</div>
+<div class="navigation">
+    <a href="index.html">Home</a>
+    <a href="summary.html">Summary</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="articles.html">Articles</a>
+</div>
 
 
-    <h1 class="title">Achievements</h1>
+<div class="abhijeetrajhans" id="abhijeetrajhansDiv">a b h i j e e t r a j h a n s&nbsp;&nbsp;&nbsp;</div>
 
-    <div class="award-box">
-        <h2>Dean's List Excellence in Academics (First and Second Semesters)</h2>
-        <p>Issued by Manipal University Jaipur · Sep 2023</p>
-        <p>Received the prestigious Dean's List for Academic Excellence for securing the highest GPA in the First and Second Semesters for the Academic Year 2022-23 at Manipal University Jaipur.</p>
-        <a href="https://drive.google.com/drive/folders/1F3DK4-wD1RbSQAgtAy_Fg9pDFTyU-eP-?usp=sharing" target="_blank">View Certificate</a>
-    </div>
 
-    <div class="award-box">
-        <h2>Certificate of Appreciation</h2>
-        <p>Issued by MUJ ACM SIGFEST'23 · Mar 2023</p>
-        <p>Received Certificate of Appreciation for securing AIR 2 in #SIGFEST AI Bot Development Hackathon conducted by #ACM in the month of March 2023.</p>
-        <a href="https://drive.google.com/file/d/1gFGgLPutc9JbghfmJbxeFNC9ZFClZNSg/view?usp=share_link" target="_blank">View Certificate</a>
-    </div>
+<h1 class="title">Achievements</h1>
 
-    <div class="award-box">
-        <h2>Certificate of Achievement</h2>
-        <p>Issued by MUJ Central · Jan 2023</p>
-        <p>Certificate of Achievement for solving the highest number of problems during the "30 DAYS OF CODE" challenge hosted by MUJ Central in the month of December 2022.</p>
-        <a href="https://drive.google.com/file/d/1BvxSoli5ckYoWHIxi_e-muubgA5dcLTf/view?usp=share_link" target="_blank">View Certificate</a>
-    </div>
+<div class="award-box">
+    <h2>Dean's List Excellence in Academics (First and Second Semesters)</h2>
+    <p>Issued by Manipal University Jaipur · Sep 2023</p>
+    <p>Received the prestigious Dean's List for Academic Excellence for securing the highest GPA in the First and Second Semesters for the Academic Year 2022-23 at Manipal University Jaipur.</p>
+    <a href="https://drive.google.com/drive/folders/1F3DK4-wD1RbSQAgtAy_Fg9pDFTyU-eP-?usp=sharing" target="_blank">View Certificate</a>
+</div>
 
-    <div class="award-box">
-        <h2>Certificate of Excellence - Scholar Badge</h2>
-        <p>Jan 2022</p>
-        <p>Received the Certificate of Academic Excellence (Scholar Badge) for the academic year 2021-2022 during my senior secondary year at Delhi Public School Bangalore North.</p>
-        <a href="https://drive.google.com/file/d/1LsUBW2UzUa7_TAqY5C59pOhu_xzUVQ0c/view?usp=share_link" target="_blank">View Certificate</a>
-    </div>
+<div class="award-box">
+    <h2>Certificate of Appreciation</h2>
+    <p>Issued by MUJ ACM SIGFEST'23 · Mar 2023</p>
+    <p>Received Certificate of Appreciation for securing AIR 2 in #SIGFEST AI Bot Development Hackathon conducted by #ACM in the month of March 2023.</p>
+    <a href="https://drive.google.com/file/d/1gFGgLPutc9JbghfmJbxeFNC9ZFClZNSg/view?usp=share_link" target="_blank">View Certificate</a>
+</div>
 
-    <div class="award-box">
-        <h2>Certificate of Merit</h2>
-        <p>Jan 2022</p>
-        <p>Received the Certificate of Merit for the academic year 2021-2022 during my senior secondary year at Delhi Public School Bangalore North for securing a perfect score (100/100) in Computer Science.</p>
-        <a href="https://drive.google.com/file/d/1BhfAVt4iXlINiJ1jW3HnwFPTvFo58UzX/view?usp=share_link" target="_blank">View Certificate</a>
-    </div>
+<div class="award-box">
+    <h2>Certificate of Achievement</h2>
+    <p>Issued by MUJ Central · Jan 2023</p>
+    <p>Certificate of Achievement for solving the highest number of problems during the "30 DAYS OF CODE" challenge hosted by MUJ Central in the month of December 2022.</p>
+    <a href="https://drive.google.com/file/d/1BvxSoli5ckYoWHIxi_e-muubgA5dcLTf/view?usp=share_link" target="_blank">View Certificate</a>
+</div>
 
-    <div class="award-box">
-        <h2>Certificate of Excellence - Scholar Badge</h2>
-        <p>Dec 2016</p>
-        <p>Received the Certificate of Excellence (Scholar Badge) for the academic year 2016-2017 during my junior year at Daratassalam International Delhi Public School Riyadh by the then Honorable Indian Ambassador to Saudi Arabia Mr. Ahmed Javed.</p>
-        <a href="https://drive.google.com/file/d/1Tmrh-NuzQuZG-uwg7dhC28Gh2SAaJVut/view?usp=share_link" target="_blank">View Certificate</a>
-    </div>
+<div class="award-box">
+    <h2>Certificate of Excellence - Scholar Badge</h2>
+    <p>Jan 2022</p>
+    <p>Received the Certificate of Academic Excellence (Scholar Badge) for the academic year 2021-2022 during my senior secondary year at Delhi Public School Bangalore North.</p>
+    <a href="https://drive.google.com/file/d/1LsUBW2UzUa7_TAqY5C59pOhu_xzUVQ0c/view?usp=share_link" target="_blank">View Certificate</a>
+</div>
 
-    <br/>
-    <br/>
+<div class="award-box">
+    <h2>Certificate of Merit</h2>
+    <p>Jan 2022</p>
+    <p>Received the Certificate of Merit for the academic year 2021-2022 during my senior secondary year at Delhi Public School Bangalore North for securing a perfect score (100/100) in Computer Science.</p>
+    <a href="https://drive.google.com/file/d/1BhfAVt4iXlINiJ1jW3HnwFPTvFo58UzX/view?usp=share_link" target="_blank">View Certificate</a>
+</div>
+
+<div class="award-box">
+    <h2>Certificate of Excellence - Scholar Badge</h2>
+    <p>Dec 2016</p>
+    <p>Received the Certificate of Excellence (Scholar Badge) for the academic year 2016-2017 during my junior year at Daratassalam International Delhi Public School Riyadh by the then Honorable Indian Ambassador to Saudi Arabia Mr. Ahmed Javed.</p>
+    <a href="https://drive.google.com/file/d/1Tmrh-NuzQuZG-uwg7dhC28Gh2SAaJVut/view?usp=share_link" target="_blank">View Certificate</a>
+</div>
+
+<br/>
+<br/>
 
 <div class="footer">
     <h3>Abhijeet Rajhans</h3>
@@ -227,6 +78,8 @@
         <a href="https://www.instagram.com/abhijeetrajhans/" target="_blank" class="social-text">Instagram</a>
     </div>
 </div>
+
+<script src="static/js/achievements.js"></script>
 
 </body>
 
