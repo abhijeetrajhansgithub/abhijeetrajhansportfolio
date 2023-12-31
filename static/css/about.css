@@ -185,4 +185,33 @@ h1, h2, p {
         pointer-events: none; /* Disable interaction when hidden */
     }
 
+    .links {
+        color: white !important; /* Set the color to white */
+        text-decoration: none; /* Optional: Remove underline */
+    }
+
+    .links:hover {
+        text-decoration: underline; /* Optional: Add underline on hover */
+    }
+
+    .links-div {
+        color: white; /* Set the text color to white */
+    }
+
+}
+
+@media (max-width: 900px) {
+    .links {
+        color: white !important; /* Set the color to white */
+        text-decoration: none; /* Optional: Remove underline */
+    }
+
+    .links:hover {
+        text-decoration: underline; /* Optional: Add underline on hover */
+    }
+
+    .links-div {
+        color: white; /* Set the text color to white */
+    }
+
 }
