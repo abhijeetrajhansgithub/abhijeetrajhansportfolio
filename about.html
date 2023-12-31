@@ -5,254 +5,95 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
-    <style>
-        body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    margin: 20px;
-    background-color: #000;
-    color: #fff;
-}
-
-h1, h2, p {
-    color: #fff;
-}
-
-/* Navigation Bar Styles */
-nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #333;
-    padding: 15px;
-    border-radius: 0px;
-    z-index: 1000;
-}
-
-nav a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 15px;
-    transition: color 0.3s ease-in-out;
-}
-
-nav a:hover {
-    color: #007BFF;
-}
-
-@media (max-width: 767px) {
-    nav {
-        flex-direction: column;
-        align-items: center;
-        font-size: medium;
-        overflow-x: auto;
-        white-space: nowrap;
-    }
-
-    nav div {
-        flex-direction: column;
-        text-align: center;
-        display: inline-block;
-    }
-
-    nav a {
-        color: #fff;
-        text-decoration: none;
-        margin: 0 15px;
-        transition: color 0.3s ease-in-out;
-    }
-}
-
-nav a:visited {
-    color: inherit;
-}
-
-/* Rounded Boxes Styles */
-.rounded-box {
-    background: linear-gradient(45deg, #005555, #405555); /* Darkened turquoise-grey gradient */
-    border: 2px solid transparent;
-    border-radius: 10px;
-    padding: 15px;
-    margin-bottom: 15px;
-    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    color: white;
-    text-decoration: none;
-}
-
-.rounded-box:hover {
-    border-color: #40E0D0; /* Turquoise border color on hover */
-    box-shadow: 0 0 10px rgba(64, 224, 208, 0.7); /* Turquoise glowing effect */
-    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-}
-
-/* Glowing Animation */
-@keyframes glowingBorder {
-    0% {
-        border-color: transparent;
-        box-shadow: 0 0 5px rgba(64, 224, 208, 0.5);
-    }
-    100% {
-        border-color: #40E0D0;
-        box-shadow: 0 0 10px rgba(64, 224, 208, 0.7);
-    }
-}
-
-/* Apply the animation to all rounded boxes */
-.rounded-box {
-    animation: glowingBorder 2s infinite alternate;
-}
-
-.title {
-    margin-top: 65px;
-}
-
-@media (max-width: 800px) {
-    .title {
-        text-align: center;
-    }
-}
-
-@media (max-width: 1080px) {
-    .title {
-        text-align: center;
-        margin-top: 100px;
-    }
-}
-
-.abhijeetrajhans {
-    position: fixed;
-    top: 6px;
-    right: 7px;
-    padding: 10px;
-    color: #ffffff;
-    font-size: 18px;
-    z-index: 1000;
-    font-family: "Franklin Gothic Medium", serif;
-}
-
-/* Media query for desktop mode */
-@media (max-width: 767px) {
-    .abhijeetrajhans {
-        display: none;
-    }
-}
-
-.abhijeetrajhans.hidden {
-    opacity: 0;
-    pointer-events: none;
-}
-
-.footer {
-    text-align: center;
-}
-
-.social-text {
-    display: inline-block;
-    margin: 0 10px;
-    text-decoration: none;
-    color: #ffffff;
-    font-family: "Times New Roman", serif
-}
-
-.social-text:hover {
-    text-decoration: underline;
-}
-
-    </style>
+    <link rel="stylesheet" href="static/css/about.css">
 </head>
 
 <body>
 
-    <!-- Navigation Bar -->
-    <nav>
-        <div>
-            <a href="index.html">&nbsp;&nbsp;Home</a>
-            <a href="summary.html">Summary</a>
-            <a href="achievements.html">Achievements</a>
-            <a href="projects.html">Projects</a>
-            <a href="articles.html">Articles</a>
-        </div>
-    </nav>
+<!-- Navigation Bar -->
+<div class="navigation">
+    <a href="index.html">Home</a>
+    <a href="summary.html">Summary</a>
+    <a href="achievements.html">Achievements</a>
+    <a href="projects.html">Projects</a>
+    <a href="articles.html">Articles</a>
+</div>
 
-    <div class="abhijeetrajhans">a b h i j e e t r a j h a n s&nbsp;&nbsp;&nbsp;</div>
+<div class="abhijeetrajhans" id="abhijeetrajhansDiv">a b h i j e e t r a j h a n s&nbsp;&nbsp;&nbsp;</div>
 
-    <!-- About Me Content -->
-    <h1 class="title">About Me</h1>
+<!-- About Me Content -->
+<h1 class="title">About Me</h1>
 
-    <!-- Paragraphs Inside Rounded Boxes -->
-    <div class="rounded-box">
+<!-- Paragraphs Inside Rounded Boxes -->
+<div class="rounded-box">
+    <p>
+        As a passionate computer science sophomore, I find myself on an exhilarating journey navigating the intricate landscapes
+        of programming and technology! 🚀 My commitment to excellence is unwavering as I wholeheartedly dive into my studies,
+        driven by the pursuit of my future career dreams.
+    </p>
+</div>
+
+<div class="rounded-box">
+    <p>
+        💡 My adventures in computer science and engineering have sculpted a robust foundation in the domains of programming
+        languages, data structures, and algorithms. 📚 This academic odyssey not only fuels my enthusiasm but also transforms
+        me into a well-rounded coding ninja, equipped with the skills to tackle diverse challenges. 💻🥋
+    </p>
+</div>
+
+<div class="rounded-box">
+    <p>
+        🎓 My three-month internship at Teachnook provided a passport to the real-world, where I actively engaged in exciting
+        projects and honed practical skills. 🤝 Additionally, as an enthusiastic member of the Google Developer Student Clubs
+        (GDSC) at MU-Jaipur, I collaborate with a dynamic community of like-minded individuals. 🚀
+    </p>
+</div>
+
+<div class="rounded-box">
+    <p>
+        🎓 Currently navigating the rich landscape of Computer Science and Engineering at Manipal University Jaipur, I transcend
+        the label of a mere student – I am an aspiring AI/ML/DL developer! I harbor a profound belief that artificial intelligence
+        and machine learning possess the transformative power to revolutionize problem-solving. 🤖🧠
+    </p>
+</div>
+
+<div class="rounded-box">
+    <p>
+        🌟 To fuel my passion and keep the adrenaline flowing, I proudly boast a 3-star rating in Hackerrank Problem Solving and
+        a stellar 4-star rating in HackerRank C Programming. These badges of honor reflect not only my dedication to elevating
+        my programming prowess but also my commitment to an unending journey of improvement. 🌟
+    </p>
+</div>
+
+<div class="rounded-box">
+    <p>
+        🌍 In the grand tapestry of the future, my vision extends beyond personal growth. I aspire to weave my skills and knowledge
+        into the fabric of real-world challenges, leaving a lasting, positive impact in the ever-evolving realm of computer science.
+        I am genuinely excited to connect with fellow tech wizards, engage in collaborative projects, and play a role in shaping the
+        exciting future of technology. Let's embark on this coding adventure together! 🌐
+    </p>
+</div>
+
+<div class="rounded-box">
+    <p>
+        In a nutshell, as a computer science sophomore, my eagerness to learn and grow as a programmer knows no bounds. I am highly
+        motivated and deeply committed to achieving excellence in my studies and future career. My coursework has exposed me to a
+        diverse array of topics, including programming languages, data structures, and algorithms. I am thrilled to continue
+        expanding my skillset, aiming to become a well-rounded and proficient software developer. Looking ahead, I plan to leverage
+        my skills and knowledge to address real-world challenges and contribute positively to the field of computer science.
+    </p>
+</div>
+
+<div class="rounded-box">
+    <div>
         <p>
-            As a passionate computer science sophomore, I find myself on an exhilarating journey navigating the intricate landscapes
-            of programming and technology! 🚀 My commitment to excellence is unwavering as I wholeheartedly dive into my studies,
-            driven by the pursuit of my future career dreams.
+            📧: <a href="mailto:abhijeetrajhans.ar@yahoo.com" class="links">abhijeetrajhans.ar@yahoo.com</a> <br/>
+            📧: <a href="mailto:ar.abhijeetrajhans@gmail.com" class="links">ar.abhijeetrajhans@gmail.com</a>
         </p>
     </div>
-
-    <div class="rounded-box">
-        <p>
-            💡 My adventures in computer science and engineering have sculpted a robust foundation in the domains of programming
-            languages, data structures, and algorithms. 📚 This academic odyssey not only fuels my enthusiasm but also transforms
-            me into a well-rounded coding ninja, equipped with the skills to tackle diverse challenges. 💻🥋
-        </p>
-    </div>
-
-    <div class="rounded-box">
-        <p>
-            🎓 My three-month internship at Teachnook provided a passport to the real-world, where I actively engaged in exciting
-            projects and honed practical skills. 🤝 Additionally, as an enthusiastic member of the Google Developer Student Clubs
-            (GDSC) at MU-Jaipur, I collaborate with a dynamic community of like-minded individuals. 🚀
-        </p>
-    </div>
-
-    <div class="rounded-box">
-        <p>
-            🎓 Currently navigating the rich landscape of Computer Science and Engineering at Manipal University Jaipur, I transcend
-            the label of a mere student – I am an aspiring AI/ML/DL developer! I harbor a profound belief that artificial intelligence
-            and machine learning possess the transformative power to revolutionize problem-solving. 🤖🧠
-        </p>
-    </div>
-
-    <div class="rounded-box">
-        <p>
-            🌟 To fuel my passion and keep the adrenaline flowing, I proudly boast a 3-star rating in Hackerrank Problem Solving and
-            a stellar 4-star rating in HackerRank C Programming. These badges of honor reflect not only my dedication to elevating
-            my programming prowess but also my commitment to an unending journey of improvement. 🌟
-        </p>
-    </div>
-
-    <div class="rounded-box">
-        <p>
-            🌍 In the grand tapestry of the future, my vision extends beyond personal growth. I aspire to weave my skills and knowledge
-            into the fabric of real-world challenges, leaving a lasting, positive impact in the ever-evolving realm of computer science.
-            I am genuinely excited to connect with fellow tech wizards, engage in collaborative projects, and play a role in shaping the
-            exciting future of technology. Let's embark on this coding adventure together! 🌐
-        </p>
-    </div>
-
-    <div class="rounded-box">
-        <p>
-            In a nutshell, as a computer science sophomore, my eagerness to learn and grow as a programmer knows no bounds. I am highly
-            motivated and deeply committed to achieving excellence in my studies and future career. My coursework has exposed me to a
-            diverse array of topics, including programming languages, data structures, and algorithms. I am thrilled to continue
-            expanding my skillset, aiming to become a well-rounded and proficient software developer. Looking ahead, I plan to leverage
-            my skills and knowledge to address real-world challenges and contribute positively to the field of computer science.
-        </p>
-    </div>
-
-    <div class="rounded-box">
-        <div>
-            <p>
-                📧: <a href="mailto:abhijeetrajhans.ar@yahoo.com" class="links">abhijeetrajhans.ar@yahoo.com</a> <br/>
-                📧: <a href="mailto:ar.abhijeetrajhans@gmail.com" class="links">ar.abhijeetrajhans@gmail.com</a>
-            </p>
-        </div>
-    </div>
-    <br/>
-    <br/>
+</div>
+<br/>
+<br/>
 <div class="footer">
     <h3>Abhijeet Rajhans</h3>
     <div class="social-icons">
@@ -262,6 +103,8 @@ nav a:visited {
         <a href="https://www.instagram.com/abhijeetrajhans/" target="_blank" class="social-text">Instagram</a>
     </div>
 </div>
+
+<script src="static/js/about.js"></script>
 
 </body>
 
