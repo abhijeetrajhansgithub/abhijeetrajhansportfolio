@@ -223,7 +223,7 @@ nav a:hover {
 }
 
 .title {
-    margin-top: 65px;
+    margin-top: 50px;
 }
 
 @media (max-width: 800px) {
@@ -235,7 +235,7 @@ nav a:hover {
 @media (max-width: 1080px) {
     .title {
         text-align: center;
-        margin-top: 100px;
+        margin-top: 50px;
     }
 }
 
