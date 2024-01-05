@@ -9,6 +9,8 @@ body {
 .footer {
     text-align: center;
     padding-top: 100px;
+    bottom: 20px;
+    margin-top: 100px;
 }
 
 .social-text {
@@ -326,3 +328,7 @@ nav a:visited {
         box-shadow: 0 0 5px #ff3399, 0 0 10px #ff3399, 0 0 15px #ff3399;
     }
 }
+
+
+
+
