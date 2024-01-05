@@ -290,3 +290,39 @@ nav a:visited {
     background-color: #ddd;
     color: black;
 }
+
+#backToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #2b2b2b;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    /* Glowing border animation */
+    animation: glowTopButton 2s linear infinite;
+}
+
+@keyframes glowTopButton {
+    0% {
+        box-shadow: 0 0 5px #ff3399, 0 0 10px #ff3399, 0 0 15px #ff3399;
+    }
+    20% {
+        box-shadow: 0 0 5px #ff3399, 0 0 10px #ff3399, 0 0 15px #ff3399;
+    }
+    40% {
+        box-shadow: 0 0 5px #9900cc, 0 0 10px #9900cc, 0 0 15px #9900cc;
+    }
+    60% {
+        box-shadow: 0 0 5px #0000ff, 0 0 10px #0000ff, 0 0 15px #0000ff;
+    }
+    80% {
+        box-shadow: 0 0 5px #9900cc, 0 0 10px #9900cc, 0 0 15px #9900cc;
+    }
+    100% {
+        box-shadow: 0 0 5px #ff3399, 0 0 10px #ff3399, 0 0 15px #ff3399;
+    }
+}
