@@ -25,10 +25,27 @@ window.onscroll = function() {
 
 function scrollFunction() {
     var button = document.getElementById("backToTopBtn");
+    var scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
+    var windowHeight = window.innerHeight;
+    var documentHeight = Math.max(
+        document.body.scrollHeight, document.documentElement.scrollHeight,
+        document.body.offsetHeight, document.documentElement.offsetHeight,
+        document.body.clientHeight, document.documentElement.clientHeight
+    );
 
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    if (scrollTop > 20 && scrollTop + windowHeight < documentHeight) {
+        // Set the button to 50% transparent while scrolling
+        button.style.opacity = "0.5";
+    } else {
+        // Set the button to opaque when at the top or bottom of the page
+        button.style.opacity = "1";
+    }
+
+    if (scrollTop > 20) {
+        // Display the button when scrolling
         button.style.display = "block";
     } else {
+        // Hide the button when at the top of the page
         button.style.display = "none";
     }
 }
