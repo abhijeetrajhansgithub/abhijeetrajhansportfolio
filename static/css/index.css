@@ -4,6 +4,25 @@ body {
     margin: 20px;
     background-color: #121212; /* Dark background color */
     color: #fff;
+    animation: colorChange 10s infinite alternate;
+}
+
+@keyframes colorChange {
+    0% {
+        background-color: #2e0104; /* Darkest shade of red */
+    }
+    25% {
+        background-color: #2a012b; /* Purple */
+    }
+    50% {
+        background-color: #07012b; /* Blue */
+    }
+    75% {
+        background-color: #000; /* Black */
+    }
+    100% {
+        background-color: #000; /* Black */
+    }
 }
 
 .footer {
@@ -40,13 +59,13 @@ body {
 
 .intro-box {
     position: relative;
-    top:120px; /* Adjust the top value as needed */
+    top: 120px; /* Adjust the top value as needed */
     left: 50%; /* Center the box horizontally */
     transform: translateX(-50%); /* Center the box horizontally */
-    background-color: #212121; /* Darker background color for the boxes */
+    background-color: rgba(33, 33, 33, 0.5); /* Transparent background color */
     padding: 20px;
     border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3); /* Glowing effect */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Glowing effect */
 }
 
 /* Default styles for desktop */
@@ -247,19 +266,21 @@ nav a:visited {
 
     .intro-box {
         position: relative;
-        top:190px; /* Adjust the top value as needed */
+        top: 120px; /* Adjust the top value as needed */
         left: 50%; /* Center the box horizontally */
         transform: translateX(-50%); /* Center the box horizontally */
-        background-color: #212121; /* Darker background color for the boxes */
+        background-color: rgba(33, 33, 33, 0.5); /* Transparent background color */
         padding: 20px;
         border-radius: 10px; /* Rounded corners */
-        box-shadow: 0 0 10px rgba(255, 255, 255, 0.3); /* Glowing effect */
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Glowing effect */
     }
 }
 .navigation {
     overflow-x: auto;
     background-color: #333;
     white-space: nowrap;
+    background-color: rgba(33, 33, 33, 0.5); /* Transparent background color */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Glowing effect */
 
     /* WebKit (Chrome, Safari) */
     scrollbar-width: thin;
