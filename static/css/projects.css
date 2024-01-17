@@ -146,6 +146,12 @@ nav a:hover {
     color: #007BFF;
 }
 
+.video {
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Glowing effect */
+    margin-top: 50px;
+}
+
 @media (max-width: 900px) {
     .navigation {
         overflow-x: auto;
@@ -189,6 +195,9 @@ nav a:hover {
     overflow-x: auto;
     background-color: #333;
     white-space: nowrap;
+    background-color: rgba(33, 33, 33, 0.5); /* Transparent background color */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Glowing effect */
+    z-index: 1000;
 
     /* WebKit (Chrome, Safari) */
     scrollbar-width: thin;
@@ -354,40 +363,37 @@ nav a:hover {
         color: white; /* Set the text color to white */
     }
 
-}
+    .video {
+        width: 100%;
+        height: auto;
+    }
 
-#backToTopBtn {
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #2b2b2b;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    /* Glowing border animation */
-    animation: glowTopButton 2s linear infinite;
-}
+    .scrollable-container {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        margin-top: 50px;
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+    }
 
-@keyframes glowTopButton {
-    0% {
-        box-shadow: 0 0 5px #ff3399, 0 0 10px #ff3399, 0 0 15px #ff3399;
+    .scrollable-wrapper {
+        display: flex;
+        scroll-snap-type: x mandatory;
+        overflow-x: scroll;
+        -webkit-overflow-scrolling: touch; /* Enable momentum scrolling on iOS devices */
+        white-space: nowrap;
+        scroll-behavior: smooth;
     }
-    20% {
-        box-shadow: 0 0 5px #ff3399, 0 0 10px #ff3399, 0 0 15px #ff3399;
+
+    /* Hide the scrollbar on WebKit browsers (Chrome, Safari) */
+    .scrollable-wrapper::-webkit-scrollbar {
+        display: none;
     }
-    40% {
-        box-shadow: 0 0 5px #9900cc, 0 0 10px #9900cc, 0 0 15px #9900cc;
+
+    .city-ranker {
+        border-radius: 15px;
+        margin: 30px;
     }
-    60% {
-        box-shadow: 0 0 5px #0000ff, 0 0 10px #0000ff, 0 0 15px #0000ff;
-    }
-    80% {
-        box-shadow: 0 0 5px #9900cc, 0 0 10px #9900cc, 0 0 15px #9900cc;
-    }
-    100% {
-        box-shadow: 0 0 5px #ff3399, 0 0 10px #ff3399, 0 0 15px #ff3399;
-    }
+
 }
